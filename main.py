@@ -19,7 +19,7 @@ class Human(Player):
 
     def make_choice(self, choices):
         while True:
-            choice = input("Enter your choice (rock, paper, scissor)")
+            choice = input("Kamu pilih apa? (rock, paper, scissor)")
             if choice in choices:
                 return choice
             
@@ -72,7 +72,7 @@ class Game:
             self.human_player.increment_score()
             print("Human menang")
         else:
-            print("Draw!!")
+            print("Sama njir, Seri Cuk!!")
     
         print(f"Computer Score: {self.computer_player.score}")
         print(f"Human Score: {self.human_player.score}")
